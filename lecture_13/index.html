@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW #13 Generators, Iterators</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="font-container">
+      <p>
+        <b
+          >1. Створіть нескінченний генератор ідентифікаторів. Повинен працювати
+          наступним чином:</b
+        ><br />
+        idGenerator.next().value -> 1<br />
+        idGenerator.next().value -> 2<br />
+        idGenerator.next().value -> 3
+      </p>
+      <div class="first-task">
+        <button id="first-task__button">Згенерувати значення</button>
+        <p class="first-task__text">Here goes the value</p>
+      </div>
+      <div class="second-task">
+        <p>
+          <b>
+            2. Створіть генератор, який буде регулювати розміри шрифту для
+            вашого сайту.<br />Працювати генератор буде наступним чином:</b
+          ><br />
+          const fontGenerator = newFontGenerator(14); // 14 – стартове
+          значення<br />
+          fontGenerator.next("up").value -> 14
+          <br />fontGenerator.next("up").value -> 16
+          <br />fontGenerator.next("up").value -> 18
+          <br />fontGenerator.next().value -> 18
+          <br />fontGenerator.next("down").value -> 16
+          <br />fontGenerator.next("down").value -> 14
+          <br />fontGenerator.next("down").value -> 12
+          <br />fontGenerator.next().value -> 12
+        </p>
+        <div class="buttons">
+          <button class="change-font-size">Зменшити</button>
+          <button class="change-font-size">Збільшити</button>
+        </div>
+        <p class="second-task__text">Change my size! 🌺</p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

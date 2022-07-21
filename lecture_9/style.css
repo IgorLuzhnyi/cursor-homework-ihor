@@ -1,0 +1,25 @@
+h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  background-color: #b5d7f3;
+  border: 1px #689bce solid;
+  color: #2b88e4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.container {
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  display: none;
+}
+
+.iterationButton {
+  display: none;
+}

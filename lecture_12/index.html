@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars-pedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <img src="./img/ships/1.png" class="spaceship" id="spaceship-1" alt="" />
+    <img src="./img/ships/2.png" class="spaceship" id="spaceship-2" alt="" />
+    <img src="./img/ships/3.png" class="spaceship" id="spaceship-3" alt="" />
+    <img src="./img/ships/4.png" class="spaceship" id="spaceship-4" alt="" />
+    <!-- <button id="translate" class="human"></button> -->
+    <h1>Star Wars</h1>
+    <section class="characters-section">
+      <div class="chapters-container">
+        <label for="chapters-list">Select Chapter</label>
+        <select name="chapters-list" id="chapters">
+          <option value="1">A New Hope</option>
+          <option value="2">The Empire Strikes Back</option>
+          <option value="3">Return of the Jedi</option>
+          <option value="4">The Phantom Menace</option>
+          <option selected="selected" value="5">Attack of the CLones</option>
+          <option value="6">Revenge of the Sith</option>
+        </select>
+        <button id="get-characters">Get characters</button>
+      </div>
+      <div class="characters"></div>
+    </section>
+    <section class="planets-section">
+      <button id="get-planets">Get Planets</button>
+      <div class="planets"></div>
+      <div class="planet-buttons">
+        <button id="previous-page">Previous Page</button>
+        <button id="next-page">Next Page</button>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

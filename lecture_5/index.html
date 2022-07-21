@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW #5 Arrays</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="task">
+      <p>
+        1. Створіть функцію getRandomArray(length, min, max) – яка повертає
+        масив випадкових цілих чисел. У функції є параметри: length - довжина
+        масиву, min – мінімальне значення цілого числа, max – максимальне
+        значення цілого числа. Приклад: getRandomArray(15, 1, 100) –> [6, 2, 55,
+        11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2] <br />
+        getRandomArray(5, 6, 9): <span class="result_1"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        2. Створіть функцію getModa(...numbers) – яка вираховує моду всіх
+        переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ. Приклад:
+        getModa(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) –> 2<br />
+        getModa(3, 8, 8, 7, 3): <span class="result_2"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        3. Створіть функцію getAverage(...numbers) – яка рахує середнє
+        арифметичне всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ.
+        Приклад: getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3,
+        2) –> 34.4<br />
+        getAverage(3, 10.5, 5, 7): <span class="result_3"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        4. Створіть функцію getMedian(...numbers) – яка рахує медіану всіх
+        переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ. Приклад:
+        getMedian(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2) –> 23
+        Приклад: getMedian(1, 2, 3, 4) –> 2.5 Приклад: getMedian(1, 2, 3, 4, 5)
+        –> 3<br />
+        getMedian(5, 4, 3, 100, 100): <span class="result_4"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        5. Створіть функцію filterEvenNumbers(...numbers) – яка фільтрує парні
+        числа передані як аргументи функції. Приклад: filterEvenNumbers(1, 2, 3,
+        4, 5, 6) -> [1, 3, 5]<br />
+        filterEvenNumbers(3, 4, 5, 8): <span class="result_5"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        6. Створіть функцію countPositiveNumbers(...numbers) – яка порахує
+        кількість чисел більших 0. Приклад: countPositiveNumbers(1, -2, 3, -4,
+        -5, 6) -> 3<br />
+        countPositiveNumbers(1, -2, 3, -4, -5, 6):
+        <span class="result_6"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        7. Створіть функцію getDividedByFive(...numbers) – яка відфільтрує усі
+        елементи в масиві та залишить тільки ті, які діляться на ціло на 5.
+        Приклад: getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2,
+        56, 3, 2) -> [55, 55]<br />
+        getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2,
+        0): <span class="result_7"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        8. Створіть функцію replaceBadWords(string) – яка 1) розіб'є фразу на
+        слова, 2) замінить погані слова на зірочки (*). При вирішенні цього
+        завдання необхідно розбити масив на слова за допомогою функції .split("
+        "), після чого масив необхідно буде склеїти .join(" ") Погані слова:
+        shit та fuck. Передбачте можливість розширювати список цих слів у
+        майбутньому.. Приклад: replaceBadWords("Are you fucking kidding?") ->
+        "Are you ****ing kidding?" Приклад: replaceBadWords("Holy shit!") ->
+        "Holy ****!" Приклад: replaceBadWords("It's bullshit!") -> "It's
+        bull****!"<br />
+        replaceBadWords( "Merry ShitFuckingshitfUckshitfuckChristmas" ):
+        <span class="result_8"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        9. Створіть функцію divideByThree(word), яка розбиває кожне слово на
+        умовні склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли
+        завжди видаляються. Рядок приводится до нижнього регістру. Приклад:
+        divideByThree("Commander) -> ["com", "man", "der"]. Приклад:
+        divideByThree("live") -> ["liv", "e"]<br />
+        divideByThree("somebody once told me the world is gonna roll me"):
+        <span class="result_9"></span>
+      </p>
+    </div>
+    <div class="task">
+      <p>
+        10 Створіть функцію generateCombinations(word), яка видасть всі можливі
+        перестановки(унікальні, без повторень) букв в слові. Для тестів не
+        передавайте слова в яких більше 10 букв. Краще взагалі обмежити работу
+        функції 10 буквами. Приклад: generateCombinations("man") -> ["man",
+        "mna", "amn", "anm", "nam", "nma"] Приклад: generateCombinations("ol")
+        -> ["ol", "lo"]<br />
+        generateCombinations("geek"): <span class="result_10"></span>
+      </p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

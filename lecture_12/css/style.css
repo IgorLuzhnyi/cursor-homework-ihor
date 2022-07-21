@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Sigma Five";
+  src: url("../fonts/Sigma\ Five\ Bold.otf");
+}
+
+body {
+  background-image: url("../img/bkg-stars.jpg");
+  background-repeat: repeat;
+  font-family: "Sigma Five";
+  color: rgb(247, 234, 59);
+}
+
+.spaceship {
+  position: absolute;
+}
+
+#spaceship-1 {
+  width: 500px;
+  top: 30px;
+  right: 100px;
+}
+
+#spaceship-2 {
+  width: 300px;
+  top: 700px;
+  right: 200px;
+}
+
+#spaceship-3 {
+  width: 500px;
+  top: 500px;
+  left: 100px;
+}
+
+#spaceship-4 {
+  width: 200px;
+  top: 1200px;
+  left: 50px;
+}
+
+#translate {
+  position: fixed;
+  top: -10px;
+  right: 20px;
+  background-image: url("/img/wookie.png");
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  border: 1px rgb(230, 230, 230) solid;
+  border-radius: 3px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+.characters-section {
+  position: relative;
+}
+
+label {
+  font-size: 26px;
+  display: block;
+  text-align: center;
+}
+
+#chapters {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-family: "Sigma Five";
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+button {
+  font-family: "Sigma Five";
+  font-size: 20px;
+  display: block;
+  margin: 20px auto 0;
+  width: 150px;
+}
+
+.chapters-container {
+  margin: 25px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.characters {
+  max-width: 1200px;
+  margin: 25px auto 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.character {
+  height: 235px;
+  width: 200px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(59, 147, 247);
+  border-radius: 5px;
+}
+
+.hero-image {
+  height: 180px;
+  width: 180px;
+  display: block;
+  margin: 5px auto 5px;
+  background-image: url(../img/characters/placeholder.jpg);
+  background-size: contain;
+}
+
+.planets {
+  margin: 30px auto 0;
+  display: block;
+  background-color: #fff;
+  width: 400px;
+}
+
+.planet__image-container {
+  padding: 10px;
+}
+
+.planet-image {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.planet-description {
+  margin-top: 10px;
+  color: rgb(59, 147, 247);
+  line-height: 125%;
+  padding: 0 20px;
+}
+
+.planet-buttons {
+  display: none;
+  justify-content: space-between;
+  width: 400px;
+  margin: 20px auto 0;
+}
