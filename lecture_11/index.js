@@ -6,8 +6,8 @@
 
 async function getRandomChinese(length, miliseconds = 50) {
   try {
-    if (!Number.isInteger(length))
-      throw new Error("Please type an integer number as an argument.");
+    if (!Number.isInteger(length) || length < 1)
+      throw new Error("Please type a positive integer number as an argument.");
     let text = "";
     while (text.length < length) {
       await new Promise((res) => {
