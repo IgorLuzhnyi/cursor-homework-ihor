@@ -1,3 +1,7 @@
+// Constants
+const minPage = 0;
+const maxPage = 9;
+
 // Query selectors
 const charactersContainer = document.querySelector(".characters");
 const chapters = document.getElementById("chapters");
@@ -25,12 +29,12 @@ getPlanets.addEventListener("click", () => {
 });
 
 prevPage.addEventListener("click", () => {
-  index > 0 ? index-- : (index = 9);
+  index > minPage ? index-- : (index = maxPage);
   getPlanet(index);
 });
 
 nextPage.addEventListener("click", () => {
-  index < 9 ? index++ : (index = 0);
+  index < maxPage ? index++ : (index = minPage);
   getPlanet(index);
 });
 
@@ -50,9 +54,9 @@ async function getFilm(index) {
           <img src="./img/characters/${hero.name
             .split(" ")
             .join("")}.jpg" class="hero-image" alt="Character photo not found">
-          <p id="name">${hero.name}</p>
-          <p id="gender">${hero.gender}</p>
-          <p id="birth-date">${hero.birth_year}</p>
+          <p class="name">${hero.name}</p>
+          <p class="gender">${hero.gender}</p>
+          <p class="birth-date">${hero.birth_year}</p>
         </div>`
       );
     }
